@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.o2.org/RegisterSvc/Schema/Req" 
+xmlns:req="http://www.o2.org/RegisterSvc/Schema/Req" 
+elementFormDefault="qualified">
+<element name="RegisterServiceReq" type="req:RegisterServiceReqType"/>
+<complexType name="RegisterServiceReqType">
+	<sequence>
+		<element name="clientDetails" type="req:clientDetailsType"/>
+		<element name="cardDetails" type="req:cardDetailsType"/>
+		<element name="accountDetails" type="req:accountDetailsType"/>
+		<element name="serviceDetails" type="req:serviceDetailsType"/>
+	</sequence>
+</complexType>
+<complexType name="clientDetailsType"> 
+	<sequence>
+		<element name="clientId" type="string"/>
+		<element name="channelId" type="string"/>
+		<element name="reqId" type="string"/>
+	</sequence>
+</complexType>
+<complexType name="cardDetailsType">
+	<sequence>
+		<element name="cardNum" type="string"/>
+		<element name="cvv" type="string"/>
+		<element name="expDate" type="string"/>
+		<element name="nameOnCard" type="string"/>
+	</sequence>
+</complexType>
+<complexType name="accountDetailsType">
+	<sequence>
+		<element name="accountNum" type="string"/>
+		<element name="mobileNum" type="long"/>
+	</sequence>
+</complexType>
+<complexType name="serviceDetailsType">
+	<sequence>
+		<element name="serviceNum" type="string"/>
+		<element name="apiName" type="string"/>
+		<element name="version" type="string"/>
+	</sequence>
+</complexType>
+</schema>
