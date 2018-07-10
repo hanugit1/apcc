@@ -4,3 +4,4 @@ Restarents
 2) Bhavarchi
 3) Kritinga
 4) Kakatiya 
+5) Shagose
