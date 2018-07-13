@@ -5,7 +5,7 @@ import org.o2.registersvc.schema.req.RegisterServiceReqType;
 
 public class RegisterServiceReqBuilder {
 	public RegisterSvcProcessVBReq buildProcessReq(RegisterServiceReqType wsReq) {
-		
+		//
 		RegisterSvcProcessVBReq vbReq = new RegisterSvcProcessVBReq();
 		vbReq.setClientId(wsReq.getClientDetails().getClientId());
 		vbReq.setChannelId(wsReq.getClientDetails().getChannelId());

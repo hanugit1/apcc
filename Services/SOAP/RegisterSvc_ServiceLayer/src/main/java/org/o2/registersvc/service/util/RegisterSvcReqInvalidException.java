@@ -16,5 +16,5 @@ public class RegisterSvcReqInvalidException extends Exception {
 
 	public String getRespMsg() {
 		return respMsg;
-	}
+	}//
 }

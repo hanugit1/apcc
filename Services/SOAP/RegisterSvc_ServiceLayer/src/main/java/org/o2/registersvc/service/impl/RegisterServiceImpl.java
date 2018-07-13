@@ -66,7 +66,7 @@ public class RegisterServiceImpl {
 			StatusBlockType status = new StatusBlockType();
 			status.setRespCode("reg111");
 			status.setRespMsg("Generic Error Message");
-		}
+		}//
 		return wsResp;
 
 	}

@@ -13,7 +13,7 @@ public class RegisterServiceResBuilder {
 		stBlock.setRespCode(vbResp.getRespCode());
 		stBlock.setRespMsg(vbResp.getRespMsg());
 
-		// Prepare the CreditCheckType Obj
+		// Prepare the CreditCheckType Obj//
 		CreditCheckType creditCheck = new CreditCheckType();
 		creditCheck.setCreditStatus(vbResp.getStatus());
 		creditCheck.setRateOfPer(vbResp.getScore());
