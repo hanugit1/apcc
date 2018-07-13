@@ -8,17 +8,16 @@ import org.o2.registersvc.schema.res.StatusBlockType;
 public class RegisterServiceResBuilder {
 	public RegisterServiceResType buildWsResp(RegisterSvcProcessVBRes vbResp) {
 		RegisterServiceResType wsResp = new RegisterServiceResType();
-		//Prepare the StatusBlock 
+		// Prepare the StatusBlock
 		StatusBlockType stBlock = new StatusBlockType();
 		stBlock.setRespCode(vbResp.getRespCode());
 		stBlock.setRespMsg(vbResp.getRespMsg());
-		
-		//Prepare the CreditCheckType Obj
+
+		// Prepare the CreditCheckType Obj
 		CreditCheckType creditCheck = new CreditCheckType();
 		creditCheck.setCreditStatus(vbResp.getStatus());
 		creditCheck.setRateOfPer(vbResp.getScore());
-		return null;
-		
-		
+		return wsResp;
+
 	}
 }
