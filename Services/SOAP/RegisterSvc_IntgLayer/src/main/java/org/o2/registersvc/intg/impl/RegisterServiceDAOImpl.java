@@ -25,7 +25,7 @@ public class RegisterServiceDAOImpl implements RegisterServiceDAO {
 		// prop.load(reader);
 
 		RegisterServiceDAORes daoResp = null;
-		try {
+		try {//
 			String dbRespCode = "1111";
 			String dbRespMsg = "Success";
 			if ("0".equals(dbRespCode)) {

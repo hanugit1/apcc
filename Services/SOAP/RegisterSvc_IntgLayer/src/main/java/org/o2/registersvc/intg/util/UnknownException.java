@@ -9,7 +9,7 @@ public class UnknownException extends Exception {
 		this.respCode = respCode;
 		this.respMsg = respMsg;
 	}
-
+//
 	public String getRespCode() {
 		return respCode;
 	}

@@ -64,7 +64,7 @@ public class DaoMain {
 		}catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		
+		//
 		ResultSet rs = cs.executeQuery("select *from customer_details");
 		System.out.println("ResultSet object "+rs);
 		

@@ -7,7 +7,7 @@ public class BusinessException extends Exception {
 		super();
 		this.respCode = respCode;
 		this.respMsg = respMsg;
-	}
+	}//
 	public String getRespCode() {
 		return respCode;
 	}
