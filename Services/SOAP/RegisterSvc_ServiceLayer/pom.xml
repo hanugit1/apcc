@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.o2.payments.info</groupId>
-	<artifactId>registersvc_servicelayer</artifactId>
+	<artifactId>RegisterSvc_ServiceLayer</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>registersvc_servicelayer</name>
-	<description>This is registersvc_servicelayer</description>
+	<name>RegisterSvc_ServiceLayer</name>
+	<description>This is RegisterSvc_ServiceLayer</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.o2.payments.info</groupId>
