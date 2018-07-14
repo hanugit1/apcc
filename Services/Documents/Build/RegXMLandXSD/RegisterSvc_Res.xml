@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegisterServiceRes>
+	<statusBlock>
+		<respCode></respCode>
+		<respMsg></respMsg>
+	</statusBlock>
+	<cardCheck>
+		<rateOfPer></rateOfPer>
+		<creditStatus></creditStatus>
+	</cardCheck>
+</RegisterServiceRes>

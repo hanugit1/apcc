@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegisterServiceReq>
+	<clientDetails>
+		<clientId></clientId>
+		<channelId></channelId>
+		<reqId></reqId>
+	</clientDetails>
+	<cardDetails>
+		<cardNum></cardNum>
+		<cvv></cvv>
+		<expDate></expDate>
+		<nameOnCard></nameOnCard>
+	</cardDetails>
+	<accountDetails>
+		<accountNum></accountNum>
+		<mobileNum></mobileNum>
+	</accountDetails>
+	<serviceDetails>
+		<serviceNum></serviceNum>
+		<apiName></apiName>
+		<version></version>
+	</serviceDetails>
+</RegisterServiceReq>
