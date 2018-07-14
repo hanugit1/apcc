@@ -19,7 +19,7 @@ public class DaoMain {
 		CallableStatement cs = null;
 		
 		try {
-			FileReader reader = new FileReader("src/main/resources/db.properties");
+			/*FileReader reader = new FileReader("src/main/resources/db.properties");
 			Properties prop = new Properties();
 			prop.load(reader);
 			String driverClass = prop.getProperty("driverClass");
@@ -28,8 +28,10 @@ public class DaoMain {
 			String pwd = prop.getProperty("pwd");
 			
 			Class.forName(driverClass);
-			con = DriverManager.getConnection(url, uname, pwd);
-			//con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hanu", "root", "root");
+			con = DriverManager.getConnection(url, uname, pwd);*/
+			
+			Class.forName("com.mysql.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hanu", "root", "root");
 			
 			String sql = "{call GET_ENROLL(?,?,?,?,?,?,?,?,?,?)}";
 			cs = con.prepareCall(sql);
