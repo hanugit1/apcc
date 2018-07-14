@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.o2.payments.info</groupId>
+	<artifactId>RegisterSvc_ProcessLayer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>RegisterSvc_ProcessLayer</name>
+	<description>This is RegisterSvc_ProcessLayer</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.o2.payments.info</groupId>
+			<artifactId>RegisterSvc_IntgLayer_PlainJdbc</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.o2.payments.info</groupId>
+			<artifactId>RegisterSvc_CreditCheck</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>
