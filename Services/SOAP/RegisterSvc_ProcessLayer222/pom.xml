@@ -2,15 +2,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.o2.payments.info</groupId>
-	<artifactId>RegisterSvc_ProcessLayer</artifactId>
+	<artifactId>RegisterSvc_ProcessLayer222</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>RegisterSvc_ProcessLayer</name>
+	<name>RegisterSvc_ProcessLayer222</name>
 	<description>This is RegisterSvc_ProcessLayer</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.o2.payments.info</groupId>
-			<artifactId>registersvc_intglayer</artifactId>
+			<artifactId>RegisterSvc_IntgLayer_PlainJdbc</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
