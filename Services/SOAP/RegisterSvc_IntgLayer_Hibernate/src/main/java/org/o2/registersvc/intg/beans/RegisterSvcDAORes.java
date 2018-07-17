@@ -1,6 +1,6 @@
 package org.o2.registersvc.intg.beans;
 
-public class RegisterServiceDAORes {
+public class RegisterSvcDAORes {
 	private String respCode;
 	private String respMsg;
 	public String getRespCode() {

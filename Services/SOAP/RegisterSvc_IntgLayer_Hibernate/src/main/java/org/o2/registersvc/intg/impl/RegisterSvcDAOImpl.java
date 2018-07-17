@@ -4,16 +4,16 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Properties;
 
-import org.o2.registersvc.intg.RegisterServiceDAO;
-import org.o2.registersvc.intg.beans.RegisterServiceDAOReq;
-import org.o2.registersvc.intg.beans.RegisterServiceDAORes;
+import org.o2.registersvc.intg.RegisterSvcDAO;
+import org.o2.registersvc.intg.beans.RegisterSvcDAOReq;
+import org.o2.registersvc.intg.beans.RegisterSvcDAORes;
 import org.o2.registersvc.intg.util.BusinessException;
 import org.o2.registersvc.intg.util.SystemException;
 import org.o2.registersvc.intg.util.UnknownException;
 
-public class RegisterServiceDAOImpl implements RegisterServiceDAO {
+public class RegisterSvcDAOImpl implements RegisterSvcDAO {
 
-	public RegisterServiceDAORes enrollment(RegisterServiceDAOReq daoReq) throws FileNotFoundException, BusinessException, SystemException, UnknownException {
+	public RegisterSvcDAORes enrollment(RegisterSvcDAOReq daoReq) throws FileNotFoundException, BusinessException, SystemException, UnknownException {
 		// 1.Get the Req from Process layer
 		// 2.Prepare the Req for Db
 		// 3.Call Db and get ResultSet
@@ -24,12 +24,12 @@ public class RegisterServiceDAOImpl implements RegisterServiceDAO {
 		FileReader reader = new FileReader("properties/enrolldb_" + env + ".properties");
 		// prop.load(reader);
 
-		RegisterServiceDAORes daoResp = null;
+		RegisterSvcDAORes daoResp = null;
 		try {//
 			String dbRespCode = "1111";
 			String dbRespMsg = "Success";
 			if ("0".equals(dbRespCode)) {
-				daoResp = new RegisterServiceDAORes();
+				daoResp = new RegisterSvcDAORes();
 				daoResp.setRespCode(dbRespCode);
 				daoResp.setRespMsg(dbRespMsg);
 			} else if ("1001".equals(dbRespCode) || "1002".equals(dbRespCode)) {
