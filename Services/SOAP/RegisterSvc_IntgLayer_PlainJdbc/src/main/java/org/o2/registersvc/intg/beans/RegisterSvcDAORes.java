@@ -1,8 +1,12 @@
 package org.o2.registersvc.intg.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class RegisterSvcDAORes {
 	private String respCode;
 	private String respMsg;
+	
 	public String getRespCode() {
 		return respCode;
 	}

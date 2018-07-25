@@ -4,14 +4,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Properties;
 
-import org.o2.registersvc.intg.RegisterServiceDAO;
+import org.o2.registersvc.intg.RegisterSvcDAO;
 import org.o2.registersvc.intg.beans.RegisterSvcDAOReq;
 import org.o2.registersvc.intg.beans.RegisterSvcDAORes;
 import org.o2.registersvc.intg.util.BusinessException;
 import org.o2.registersvc.intg.util.SystemException;
 import org.o2.registersvc.intg.util.UnknownException;
 
-public class RegisterSvcDAOImpl implements RegisterServiceDAO {
+public class RegisterSvcDAOImpl implements RegisterSvcDAO {
 
 	public RegisterSvcDAORes enrollment(RegisterSvcDAOReq daoReq) throws FileNotFoundException, BusinessException, SystemException, UnknownException {
 		// 1.Get the Req from Process layer

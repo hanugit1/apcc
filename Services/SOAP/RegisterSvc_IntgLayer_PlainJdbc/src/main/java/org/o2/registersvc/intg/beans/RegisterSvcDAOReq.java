@@ -1,5 +1,8 @@
 package org.o2.registersvc.intg.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class RegisterSvcDAOReq {
 	private String clientId;
 	private String channelId;
@@ -9,6 +12,7 @@ public class RegisterSvcDAOReq {
 	private String nameOnCard;
 	private String accountNum;
 	private long mobileNum;
+	
 	public String getClientId() {
 		return clientId;
 	}
