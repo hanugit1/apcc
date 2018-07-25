@@ -7,7 +7,7 @@ import java.util.Map;
 
 import javax.sql.DataSource;
 
-import org.o2.registersvc.intg.RegisterServiceDAO;
+import org.o2.registersvc.intg.RegisterSvcDAO;
 import org.o2.registersvc.intg.beans.RegisterServiceDAOReq;
 import org.o2.registersvc.intg.beans.RegisterServiceDAORes;
 import org.o2.registersvc.intg.util.BusinessException;
@@ -18,7 +18,7 @@ import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.jdbc.object.StoredProcedure;
 
-public class RegisterSvcDAOImpl extends StoredProcedure implements RegisterServiceDAO {
+public class RegisterSvcDAOImpl extends StoredProcedure implements RegisterSvcDAO {
 
 	public RegisterSvcDAOImpl(DataSource ds, String name) {
 		super(getTemplate(), "GET_ENROLL");

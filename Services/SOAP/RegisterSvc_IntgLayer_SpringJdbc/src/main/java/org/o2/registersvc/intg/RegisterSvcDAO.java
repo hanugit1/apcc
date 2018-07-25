@@ -8,6 +8,6 @@ import org.o2.registersvc.intg.util.BusinessException;
 import org.o2.registersvc.intg.util.SystemException;
 import org.o2.registersvc.intg.util.UnknownException;
 
-public interface RegisterServiceDAO {//
+public interface RegisterSvcDAO {//
 	public RegisterServiceDAORes enrollment(RegisterServiceDAOReq daoReq) throws FileNotFoundException, BusinessException, SystemException, UnknownException;
 }
