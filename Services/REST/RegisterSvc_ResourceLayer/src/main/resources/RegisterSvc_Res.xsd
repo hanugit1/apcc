@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.o2.org/RegisterSvc/Schema/Res" 
+xmlns:res="http://www.o2.org/RegisterSvc/Schema/Res" 
+elementFormDefault="qualified">
+
+<element name="RegisterServiceRes" type="res:RegisterServiceResType"/>
+<complexType name="RegisterServiceResType">
+	<sequence>
+		<element name="statusBlock" type="res:statusBlockType"/>
+		<element name="creditCheck" type="res:creditCheckType"/>
+	</sequence>
+</complexType>
+<complexType name="statusBlockType">
+	<sequence>
+		<element name="respCode" type="string"/>
+		<element name="respMsg" type="string"/>
+	</sequence>
+</complexType>
+<complexType name="creditCheckType">
+	<sequence>
+		<element name="rateOfPer" type="float"/>
+		<element name="creditStatus" type="string"/>
+	</sequence>
+</complexType>
+</schema>
