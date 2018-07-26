@@ -6,7 +6,7 @@ import org.o2.registersvc.schema.req.ClientDetailsType;
 import org.o2.registersvc.schema.req.RegisterServiceReqType;
 import org.o2.registersvc.service.util.RegisterSvcReqInvalidException;
 
-public class RegisterServiceValidator {
+public class RegisterSvcValidator {
 
 	public void validateWsReq(RegisterServiceReqType wsReq) throws RegisterSvcReqInvalidException {
 		if(wsReq == null || wsReq.getAccountDetails() == null || wsReq.getCardDetails() == null 
