@@ -1,4 +1,4 @@
-package org.o2.registersvc.entities;
+package org.o2.registersvc.intg.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

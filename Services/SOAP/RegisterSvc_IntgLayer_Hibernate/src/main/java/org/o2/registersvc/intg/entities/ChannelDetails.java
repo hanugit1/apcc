@@ -1,4 +1,4 @@
-package org.o2.registersvc.entities;
+package org.o2.registersvc.intg.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,17 +7,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="CLIENT_DETAILS")
-public class ClientDetails {
-	
+@Table(name = "CHANNEL_DETAILS")
+public class ChannelDetails {
+
 	@Id
 	@GeneratedValue
 	private String sno;
-	
-	@Column(name="CLIENT_ID")
-	private String clientId;
-	
-	@Column(name="DESCRIPTION")
+
+	@Column(name = "CHANNEL_ID")
+	private String channelId;
+
+	@Column(name = "description")
 	private String desc;
 
 	public String getSno() {
@@ -28,12 +28,12 @@ public class ClientDetails {
 		this.sno = sno;
 	}
 
-	public String getClientId() {
-		return clientId;
+	public String getChannelId() {
+		return channelId;
 	}
 
-	public void setClientId(String clientId) {
-		this.clientId = clientId;
+	public void setChannelId(String channelId) {
+		this.channelId = channelId;
 	}
 
 	public String getDesc() {
@@ -47,10 +47,10 @@ public class ClientDetails {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("ClientDetails [sno=");
+		builder.append("ChannelDetails [sno=");
 		builder.append(sno);
-		builder.append(", clientId=");
-		builder.append(clientId);
+		builder.append(", channelId=");
+		builder.append(channelId);
 		builder.append(", desc=");
 		builder.append(desc);
 		builder.append("]");
@@ -58,4 +58,6 @@ public class ClientDetails {
 	}
 	
 	
+
+
 }
