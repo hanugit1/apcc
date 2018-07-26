@@ -1,10 +1,10 @@
 package org.o2.registersvc.resource.validator;
 
+import org.o2.registersvc.resource.exception.RegisterSvcReqInvalidException;
 import org.o2.registersvc.schema.req.AccountDetailsType;
 import org.o2.registersvc.schema.req.CardDetailsType;
 import org.o2.registersvc.schema.req.ClientDetailsType;
 import org.o2.registersvc.schema.req.RegisterServiceReqType;
-import org.o2.registersvc.service.util.RegisterSvcReqInvalidException;
 
 public class RegisterSvcValidator {
 
