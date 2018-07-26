@@ -2,10 +2,10 @@ package org.o2.registersvc.service.impl;
 
 import java.io.FileNotFoundException;
 
-import org.o2.registersvc.process.RegisterServiceProcess;
+import org.o2.registersvc.process.RegisterSvcProcess;
 import org.o2.registersvc.process.beans.RegisterSvcProcessVBReq;
 import org.o2.registersvc.process.beans.RegisterSvcProcessVBRes;
-import org.o2.registersvc.process.impl.RegisterServiceProcessImpl;
+import org.o2.registersvc.process.impl.RegisterSvcProcessImpl;
 import org.o2.registersvc.schema.req.RegisterServiceReqType;
 import org.o2.registersvc.schema.res.RegisterServiceResType;
 import org.o2.registersvc.schema.res.StatusBlockType;
@@ -33,7 +33,7 @@ public class RegisterServiceImpl {
 			RegisterSvcProcessVBReq vbReq = reqBuilder.buildProcessReq(wsReq);
 
 			// 4.Call the Process
-			RegisterServiceProcess process = new RegisterServiceProcessImpl();
+			RegisterSvcProcess process = new RegisterSvcProcessImpl();
 			RegisterSvcProcessVBRes vbResp = process.enrollment(vbReq);
 
 			// 5.Prepare the Service Response
