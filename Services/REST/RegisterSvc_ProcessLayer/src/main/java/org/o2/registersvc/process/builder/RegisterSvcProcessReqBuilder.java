@@ -1,14 +1,13 @@
 package org.o2.registersvc.process.builder;
 
-import org.o2.registersvc.creditcheck.beans.CreditCheckReq;
-import org.o2.registersvc.intg.beans.RegisterServiceDAOReq;
+
 import org.o2.registersvc.process.beans.RegisterSvcProcessVBReq;
 
 public class RegisterSvcProcessReqBuilder {
-	public RegisterServiceDAOReq buildDaoReq(RegisterSvcProcessVBReq vbReq) {
+	public RegisterSvcDAOReq buildDaoReq(RegisterSvcProcessVBReq vbReq) {
 		
 		//Preparing daoReq
-		RegisterServiceDAOReq daoReq = new RegisterServiceDAOReq();
+		RegisterSvcDAOReq daoReq = new RegisterSvcDAOReq();
 		daoReq.setClientId(vbReq.getClientId());
 		daoReq.setChannelId(vbReq.getChannelId());
 		daoReq.setCardNum(vbReq.getCardNum());

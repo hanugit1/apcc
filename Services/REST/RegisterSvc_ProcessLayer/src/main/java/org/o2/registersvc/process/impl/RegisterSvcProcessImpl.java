@@ -13,11 +13,11 @@ import org.o2.registersvc.intg.impl.RegisterServiceDAOImpl;
 import org.o2.registersvc.intg.util.BusinessException;
 import org.o2.registersvc.intg.util.SystemException;
 import org.o2.registersvc.intg.util.UnknownException;
-import org.o2.registersvc.process.RegisterServiceProcess;
+import org.o2.registersvc.process.RegisterSvcProcess;
 import org.o2.registersvc.process.beans.RegisterSvcProcessVBReq;
 import org.o2.registersvc.process.beans.RegisterSvcProcessVBRes;
 
-public class RegisterServiceProcessImpl implements RegisterServiceProcess {
+public class RegisterSvcProcessImpl implements RegisterSvcProcess {
 
 	public RegisterSvcProcessVBRes enrollment(RegisterSvcProcessVBReq vbReq) throws FileNotFoundException, BusinessException, SystemException, UnknownException {
 		//1.Get the Req from Service Layer
