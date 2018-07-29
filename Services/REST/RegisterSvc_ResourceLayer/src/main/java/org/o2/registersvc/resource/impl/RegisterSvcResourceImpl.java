@@ -110,6 +110,7 @@ public class RegisterSvcResourceImpl {
 
 			// Prepare wsResp to vbResp
 			wsResp = resBuilder.buildWsResp(vbResp);
+			
 		} catch (RegisterSvcReqInvalidException e) {
 			statusBlockType.setRespCode(e.getRespCode());
 			statusBlockType.setRespMsg(e.getRespMsg());

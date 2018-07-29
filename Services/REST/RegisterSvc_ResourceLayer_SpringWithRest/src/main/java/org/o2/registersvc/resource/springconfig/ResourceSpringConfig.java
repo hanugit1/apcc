@@ -1,5 +1,6 @@
 package org.o2.registersvc.resource.springconfig;
 
+import org.o2.registersvc.process.springconfig.ProcessSpringConfig;
 import org.o2.registersvc.resource.builder.RegisterSvcReqBuilder;
 import org.o2.registersvc.resource.builder.RegisterSvcResBuilder;
 import org.o2.registersvc.resource.validator.RegisterSvcValidator;
@@ -16,7 +17,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@ComponentScan(value = { "org.o2.registersvc.schema.req", "org.o2.registersvc.resource.validator" })
+@ComponentScan(value = { "org.o2.registersvc.schema.req", "org.o2.registersvc.resource.validator",
+		"org.o2.registersvc.resource.builder", "org.o2.registersvc.resource.exception"})
 @Import(value = { ProcessSpringConfig.class })
 public class ResourceSpringConfig {
 
