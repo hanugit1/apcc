@@ -1,4 +1,4 @@
-package org.o2.registersvc.client.beans;
+package org.o2.registersvc.restclient.beans;
 
 public class RegisterSvcWebReq {
 	private String clientId;
