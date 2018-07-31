@@ -3,6 +3,7 @@ package org.o2.registersvc.restclient.beans;
 public class RegisterSvcWebReq {
 	private String clientId;
 	private String channelId;
+	private String reqId;
 	private String cardNum;
 	private String cvv;
 	private String expDate;
@@ -24,6 +25,14 @@ public class RegisterSvcWebReq {
 
 	public void setChannelId(String channelId) {
 		this.channelId = channelId;
+	}
+
+	public String getReqId() {
+		return reqId;
+	}
+
+	public void setReqId(String reqId) {
+		this.reqId = reqId;
 	}
 
 	public String getCardNum() {
@@ -77,10 +86,12 @@ public class RegisterSvcWebReq {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("RegisterSvcProcessVBReq [clientId=");
+		builder.append("RegisterSvcWebReq [clientId=");
 		builder.append(clientId);
 		builder.append(", channelId=");
 		builder.append(channelId);
+		builder.append(", reqId=");
+		builder.append(reqId);
 		builder.append(", cardNum=");
 		builder.append(cardNum);
 		builder.append(", cvv=");
