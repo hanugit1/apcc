@@ -1,5 +1,8 @@
 package org.o2.payments.dao;
 
-public interface SpringHibernateTemplateDAO {
+import org.o2.payments.model.RegisterSvcHbReq;
+import org.o2.payments.model.RegisterSvcHbRes;
 
+public interface SpringHibernateTemplateDAO {
+	public RegisterSvcHbRes enrollment(RegisterSvcHbReq req);
 }
